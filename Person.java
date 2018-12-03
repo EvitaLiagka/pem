@@ -22,6 +22,10 @@ public abstract class Person {
         this.lastname = lastname;
         this.dateofbirth = dateofbirth;
     }
+   
+    private int age(){
+    int currentage = 2018;
+    return (currentage - dateofbirth);}
 
     public String getFirstname() {
         return firstname;

@@ -9,7 +9,7 @@ package personmain;
  *
  * @author Evita
  */
-public abstract class Employee extends Person {
+public class Employee extends Person {
     
     double salary;
     

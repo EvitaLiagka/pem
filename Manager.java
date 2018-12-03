@@ -9,7 +9,7 @@ package personmain;
  *
  * @author Evita
  */
-public abstract class Manager extends Employee{
+public class Manager extends Employee{
     
     double bonus;
     
@@ -17,8 +17,8 @@ public abstract class Manager extends Employee{
         super(firstname, lastname, dateofbirth, salary);
     }
 
-    public double getBonus() {
-        return bonus;
+    public double getBonus(){
+        return (getSalary()+((5/100)*(getSalary())));
     }
     
 }
