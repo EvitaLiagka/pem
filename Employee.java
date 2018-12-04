@@ -11,10 +11,10 @@ package personmain;
  */
 public class Employee extends Person {
     
-    double salary;
+    private double salary;
     
-    public Employee (String firstname, String lastname, int dateofbirth, double salary){
-    super(firstname, lastname, dateofbirth);}
+    public Employee (String first_name, String last_name, int year_of_birth, double salary){
+    super(first_name, last_name, year_of_birth);}
 
     public double getSalary() {
         return salary;

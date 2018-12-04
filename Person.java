@@ -6,6 +6,7 @@
 package personmain;
 
 import java.util.Scanner;
+import java.Time.Year;
 
 /**
  *
@@ -13,30 +14,29 @@ import java.util.Scanner;
  */
 public abstract class Person {
     
-    String firstname;
-    String lastname;
-    int dateofbirth;
+    private String first_name;
+    private String last_name;
+    private int year_of_birth;
 
-    public Person(String firstname, String lastname, int dateofbirth) {
-        this.firstname = firstname;
-        this.lastname = lastname;
-        this.dateofbirth = dateofbirth;
+    public Person(String first_name, String last_name, int year_of_birth) {
+        this.first_name = first_name;
+        this.last_name = last_name;
+        this.year_of_birth = year_of_birth;
     }
    
-    private int age(){
-    int currentage = 2018;
-    return (currentage - dateofbirth);}
+    public int getAge(){
+    return int age = (Year.now().getValue() - year_of_birth);}
 
-    public String getFirstname() {
-        return firstname;
+    public String getFirst_name() {
+        return first_name;
     }
 
-    public String getLastname() {
-        return lastname;
+    public String getLast_name() {
+        return last_name;
     }
 
-    public int getDateofbirth() {
-        return dateofbirth;
+    public int getYear_of_birth() {
+        return year_of_birth;
     }
 
    

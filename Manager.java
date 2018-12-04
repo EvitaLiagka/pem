@@ -11,14 +11,14 @@ package personmain;
  */
 public class Manager extends Employee{
     
-    double bonus;
+    private double bonus;
     
-    public Manager(String firstname, String lastname, int dateofbirth, double salary) {
-        super(firstname, lastname, dateofbirth, salary);
+    public Manager(String first_name, String last_name, int year_of_birth, double salary) {
+        super(first_name, last_name, year_of_birth, salary);
     }
 
     public double getBonus(){
-        return (getSalary()+((5/100)*(getSalary())));
+        return (getSalary()+(0.2*(getSalary()))); // 0.2 = bonusPercentage (parametropoiimeno)
     }
     
 }
